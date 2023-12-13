@@ -106,8 +106,8 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resource  = "KUniMPSDK/**/*.{bundle}"
-  spec.resources = "KUniMPSDK/**/*.{js,ttf,dat,png}"
+  spec.resource  = "KUniMPSDK/Core/Resources/*.{bundle}"
+  spec.resources = "KUniMPSDK/Core/Resources/*.{js,ttf,dat,png}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -122,10 +122,11 @@ Pod::Spec.new do |spec|
   spec.static_framework = true
   spec.frameworks = "JavaScriptCore", "CoreMedia", "MediaPlayer", "AVFoundation", "AVKit", "GLKit", "OpenGLES", "CoreText", "QuartzCore", "CoreGraphics", "QuickLook", "CoreTelephony", "AssetsLibrary", "CoreLocation", "AddressBook"
 
-  # spec.library   = "iconv","c++"
-  # spec.libraries = "iconv", "xml2"
-  spec.vendored_libraries  = 'KUniMPSDK/**/*.{a}'
-  spec.vendored_frameworks = "KUniMPSDK/Core/**/*.{framework}", "KUniMPSDK/Features/lib/*.{framework,xcframework}"
+  # spec.library   = "libiconv"
+  spec.libraries = "iconv", "xml2","c++"
+  spec.vendored_libraries  = 'KUniMPSDK/Libs/*.{a}'
+  spec.vendored_frameworks = "KUniMPSDK/Core/**/*.{framework}"
+  #, "KUniMPSDK/Features/lib/*.{framework,xcframework}"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

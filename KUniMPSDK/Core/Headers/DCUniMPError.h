@@ -34,8 +34,6 @@ typedef NS_ENUM(NSInteger,DCUniMPErrorCode) {
     /// 已存在运行的小程序
     DCUniMPErrorExistOtherUniMPRunning = -3002,
     /// 打开小程序的数量已达到上限
-    DCUniMPErrorAppCountLimit = -3003,
-    /// 已经存在打开的相同的小程序
-    DCUniMPErrorExistSameUniMPRunning = - 3004
+    DCUniMPErrorAppCountLimit = -3003
 };
 NS_ASSUME_NONNULL_END
