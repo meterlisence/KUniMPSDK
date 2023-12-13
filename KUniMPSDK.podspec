@@ -124,8 +124,8 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "libiconv"
   spec.libraries = "iconv", "xml2","c++"
-  spec.vendored_libraries  = 'KUniMPSDK/Libs/*.{a}'
-  spec.vendored_frameworks = "KUniMPSDK/Core/**/*.{framework}"
+  spec.vendored_libraries  = 'KUniMPSDK/Core/Libs/*.{a}'
+  spec.vendored_frameworks = "KUniMPSDK/Core/Libs/*.{framework}"
   #, "KUniMPSDK/Features/lib/*.{framework,xcframework}"
 
 
