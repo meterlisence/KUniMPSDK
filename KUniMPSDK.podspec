@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "KUniMPSDK"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.5"
   spec.summary      = "UniMPSDK for KKliao static lib."
 
   # This description is used to generate tags and improve search results.
@@ -137,7 +137,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
