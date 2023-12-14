@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "KUniMPSDK"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "UniMPSDK for KKliao static lib."
 
   # This description is used to generate tags and improve search results.
