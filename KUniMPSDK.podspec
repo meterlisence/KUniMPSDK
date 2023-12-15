@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "KUniMPSDK"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "UniMPSDK for KKliao static lib."
 
   # This description is used to generate tags and improve search results.
@@ -107,7 +107,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.resource  = "KUniMPSDK/Core/Resources/*.{bundle}"
-  spec.resources = "KUniMPSDK/Core/Resources/*.{js,ttf,dat,png}"
+  spec.resources = "KUniMPSDK/Core/Resources/*.{js,ttf,dat,png,bundle}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
