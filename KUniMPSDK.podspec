@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "KUniMPSDK"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.10"
   spec.summary      = "UniMPSDK for KKliao static lib."
 
   # This description is used to generate tags and improve search results.
@@ -68,13 +68,12 @@ Pod::Spec.new do |spec|
    spec.platform     = :ios, "13.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "13.0"
+  spec.ios.deployment_target = "13.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
   # spec.visionos.deployment_target = "1.0"
-
-
+  spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
@@ -124,7 +123,7 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "libiconv"
   spec.libraries = "iconv", "xml2","c++"
-  spec.vendored_libraries  = 'KUniMPSDK/Core/Libs/*.{a}'
+  #spec.vendored_libraries  = 'KUniMPSDK/Core/Libs/*.{a}'
   spec.vendored_frameworks = "KUniMPSDK/Core/Libs/*.{framework}"
   #, "KUniMPSDK/Features/lib/*.{framework,xcframework}"
 
@@ -138,7 +137,8 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency 'SDWebImage', '~> 5.18.3'
+  spec.dependency 'SDWebImageWebPCoder', '~> 0.14.0'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
