@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "KUniMPSDK"
-  spec.version      = "0.0.11"
+  spec.version      = "0.0.12"
   spec.summary      = "UniMPSDK for KKliao static lib."
 
   # This description is used to generate tags and improve search results.
@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "libiconv"
   spec.libraries = "iconv", "xml2","c++"
-  #spec.vendored_libraries  = 'KUniMPSDK/Core/Libs/*.{a}'
+  spec.vendored_libraries  = 'KUniMPSDK/Core/Libs/*.{a}'
   spec.vendored_frameworks = "KUniMPSDK/Core/Libs/*.{framework}"
   #, "KUniMPSDK/Features/lib/*.{framework,xcframework}"
 
